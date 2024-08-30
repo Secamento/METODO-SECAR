@@ -19,7 +19,7 @@ header {
     top: 0;
     left: 0;
     padding: 10px 0;
-    background-color: #f4f4f4; /* Cor de fundo para garantir que a logo seja visível */
+    background-color: #f4f4f4; /* Cor de fundo pa}ra garantir que a logo seja visível */
 }
 
 .logo {
@@ -164,27 +164,30 @@ p {
     padding: 12px 20px;
     font-size: 1.1em;
     font-weight: bold;
-    border: 2px solid #FF0000; /* Borda vermelha */
+    border: 2px solid #000000; /* Borda preta */
     border-radius: 8px;
     cursor: pointer;
-    transition: background-color 0.3s, color 0.3s, transform 0.3s, box-shadow 0.3s; /* Transições suaves */
-    box-shadow: 0px 8px 15px rgba(0, 0, 255, 0.3); /* Sombra azul */
+    transition: background-color 0.3s, color 0.3s, transform 0.3s, box-shadow 0.3s; /* Transições suaves para hover */
+    box-shadow: 0px 8px 15px rgba(255, 0, 255, 0.3); /* Sombra rosa */
     display: flex;
-    justify-content: space-between; /* Espaça o texto e o ícone */
-    align-items: center; /* Alinha o texto e o ícone verticalmente */
-    text-align: left; /* Garante que o texto fique alinhado à esquerda */
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
 }
 
+/* Transições ao passar o mouse */
 .option-button:hover {
-    background-color: #FF0000; /* Muda a cor de fundo ao passar o mouse */
-    color: white; /* Muda a cor do texto ao passar o mouse */
-    transform: scale(1.05); /* Aumenta ligeiramente o botão ao passar o mouse */
-    box-shadow: 0px 8px 15px rgba(0, 0, 255, 0.5); /* Intensifica a sombra azul ao passar o mouse */
+    background-color: #FF0000;
+    color: white;
+    transform: scale(1.05);
+    box-shadow: 0px 8px 15px rgba(255, 0, 255, 0.5);
 }
 
+/* Transições ao clicar no botão */
 .option-button:active {
-    transform: scale(0.98); /* Diminui ligeiramente o botão ao clicar */
-    box-shadow: 0px 6px 12px rgba(0, 0, 255, 0.4); /* Ajusta a sombra azul ao clicar */
+    transform: scale(0.98); /* Reduz o tamanho do botão */
+    box-shadow: 0px 6px 12px rgba(255, 0, 255, 0.4);
+    transition: transform 0.6s, box-shadow 0.6s; /* Transições mais lentas */
 }
 
 .option-text {
