@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amarração Amorosa</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Logo no topo -->
+    <img src="images/logo.png" alt="Logo" class="logo">
+
+    <!-- Barra de progresso (inicialmente oculta) -->
+    <div class="progress-bar-container" id="progress-bar-container" style="display: none;">
+        <div class="progress-bar" id="progress-bar"></div>
+    </div>
+
+    <!-- Primeira seção: Seleção de gênero -->
+    <div class="container" id="gender-selection">
+        <h1>Pronta para descobrir o segredo que vai transformar seu corpo e alcançar os resultados dos seus sonhos?</h1>
+        <p>Conheça o MÉTODO SECAR EM 20 DIAS e dê o primeiro passo para uma mudança real e duradoura.</p>
+        <div class="gender-selection">
+            <strong>Selecione seu gênero abaixo:</strong>
+            <div class="options">
+                <div class="option" id="male">
+                    <img src="images/masculino.jpg" alt="Masculino">
+                    <p>MASCULINO</p>
+                </div>
+                <div class="option" id="female">
+                    <img src="images/feminino.jpg" alt="Feminino">
+                    <p>FEMININO</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Segunda seção: Pergunta de idade (inicialmente oculta) -->
+    <div class="container" id="age-selection" style="display: none;">
+        <h1>Qual a sua idade?</h1>
+        <p>Utilizamos a sua idade para personalizar o 'Método Secar em 20 Dias' e garantir os melhores resultados para você.</p>
+        <div class="age-options">
+            <div class="row">
+                <div class="option">
+                    <img src="images/18-29.png" alt="18-29">
+                    <p>18-29</p>
+                </div>
+                <div class="option">
+                    <img src="images/29-39.png" alt="29-39">
+                    <p>29-39</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="option">
+                    <img src="images/39-49.png" alt="39-49">
+                    <p>39-49</p>
+                </div>
+                <div class="option">
+                    <img src="images/50+.png" alt="50+">
+                    <p>50+</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Terceira seção: Informação + Foto + Botão (inicialmente oculta) -->
+    <div class="container" id="success-story" style="display: none;">
+        <h1><strong>+12 MIL Pessoas</strong></h1>
+        <p><strong>escolheram o MÉTODO SECAR EM 20 DIAS e transformaram seus corpos de forma rápida e eficaz em 2024.</strong></p>
+        <img src="images/encontro.jpg" alt="Encontro - Amarração Amorosa" class="success-photo">
+        <p>ENCONTRO - AMARRAÇÃO AMOROSA (12/07/2024)</p>
+        <button class="continue-button" id="continue-to-results">Continuar</button>
+    </div>
+
+    <!-- Quarta seção: Resultados (inicialmente oculta) -->
+    <div class="container" id="results" style="display: none;">
+        <h1>Veja o resultado de quem já aplicou o MÉTODO SECAR EM 20 DIAS</h1>
+        <img src="images/resultados.jpg" alt="Resultados" class="results-photo">
+        <button class="continue-button" id="continue-final">Continuar</button>
+    </div>
+
+    <!-- Quinta seção: Motivos para Amarração Amorosa (inicialmente oculta) -->
+    <div class="container" id="reasons" style="display: none;">
+        <h1><strong>Por que você Precisa seguir o Método Secar em 20 Dias?</strong></h1>
+        <h2>Isso é muito importante!</h2>
+        <div class="options">
+            <button class="option-button" id="reason-1">
+                Quero melhorar minha saúde e me sentir mais confiante
+                <img src="images/emojibiceps.png" alt="Emoji de coração partido" class="option-icon">
+            </button>
+            <button class="option-button" id="reason-2">
+                Busco transformar meu corpo e alcançar um novo nível de bem-estar
+                <img src="images/emojiestrela.png" alt="Emoji de coração" class="option-icon">
+            </button>
+            <button class="option-button" id="reason-3">
+                Estou enfrentando dificuldades para emagrecer e preciso de uma solução eficaz
+                <img src="images/emojitriste.png" alt="Emoji triste" class="option-icon">
+            </button>
+            <button class="option-button" id="reason-4">
+                Desejo recuperar minha energia e autoestima rapidamente
+                <img src="images/emojienergia.png" alt="Emoji estrela" class="option-icon">
+            </button>
+        </div>
+    </div>
+
+    <!-- Sexta seção: Perfil de Relacionamento (inicialmente oculta) -->
+<div class="container" id="relationship-profile" style="display: none;">
+    <h1><strong>Qual é o seu principal objetivo ao seguir o Método Secar em 20 Dias?</strong></h1>
+    <h2>Isso é muito importante!</h2>
+    <div class="options">
+        <button class="option-button" id="profile-1">
+            Quero um corpo que me faça sentir confiante e imbatível, como sempre sonhei
+            <img src="images/emojifeliz.png" alt="Emoji de segurança" class="option-icon">
+        </button>
+        <button class="option-button" id="profile-2">
+            Procuro um método que entregue resultados reais e respeite meu compromisso
+            <img src="images/emojilupa.png" alt="Emoji sério" class="option-icon">
+        </button>
+        <button class="option-button" id="profile-3">
+            Desejo encontrar um método confiável e eficaz que se torne parte de minha rotina
+            <img src="images/emojicorreto.png" alt="Emoji fiel" class="option-icon">
+        </button>
+      </div>
+    </div>
+
+    <!-- Sétima seção: Melhorias no Relacionamento (inicialmente oculta) -->
+<div class="container" id="relationship-improvements" style="display: none;">
+    <h1><strong>O que você mais espera alcançar com o Método Secar em 20 Dias?</strong></h1>
+    <h2>Isso é muito importante!</h2>
+    <div class="options">
+        <button class="option-button" id="improvement-1">
+            Quero aumentar minha confiança e me sentir bem com meu corpo
+            <img src="images/emojimaospracima.png" alt="Emoji de confiança" class="option-icon">
+        </button>
+        <button class="option-button" id="improvement-2">
+            Desejo ver resultados visíveis que reforcem minha autoestima e autovalorização
+            <img src="images/emojigraficos.png" alt="Emoji de amor" class="option-icon">
+        </button>
+        <button class="option-button" id="improvement-3">
+            Espero encontrar um método que seja comprometido com minha jornada e ofereça resultados consistentes
+            <img src="images/emojicadeado.png" alt="Emoji de responsabilidade" class="option-icon">
+        </button>
+    </div>
+</div>
+
+    <!-- Oitava seção: Tentativas Anteriores (inicialmente oculta) -->
+<div class="container" id="previous-attempts" style="display: none;">
+    <h1><strong>Você já tentou algum método para alcançar seus objetivos de emagrecimento?</strong></h1>
+    <h2>Isso é muito importante para entendermos sua jornada!</h2>
+    <div class="options">
+        <button class="option-button" id="attempt-1">
+            Sim, mas não obtive os resultados esperados
+            <img src="images/emojix.png" alt="Emoji de tentativa falha" class="option-icon">
+        </button>
+        <button class="option-button" id="attempt-2">
+            Não, ainda não encontrei uma solução que funcione para mim
+            <img src="images/emojiproibido.png" alt="Emoji sem solução" class="option-icon">
+        </button>
+        <button class="option-button" id="attempt-3">
+            Sim, já segui outros programas, mas estou em busca de algo mais eficaz
+            <img src="images/emojiseta.png" alt="Emoji de amarração anterior" class="option-icon">
+        </button>
+    </div>
+</div>
+
+<!-- Nona seção: Exemplo de Foto e Botão (inicialmente oculta) -->
+<div class="container" id="ninth-section" style="display: none;">
+    <img src="images/mariaelena.png" alt="Imagem descritiva" class="success-photo">
+    <button class="continue-button" id="continue-to-final">Continuar</button>
+</div>
+
+<!-- Décima primeira seção: Pensamentos recorrentes (inicialmente oculta) -->
+<div class="container" id="recurring-thoughts" style="display: none;">
+    <h1><strong>Quais são os pensamentos mais recorrentes que você tem?</strong></h1>
+    <h2>Isso é muito importante!</h2>
+    <div class="options">
+        <button class="option-button" id="thought-1">
+            Quero voltar com minha ex parceira
+            <img src="images/return.png" alt="Emoji de retorno" class="option-icon">
+        </button>
+        <button class="option-button" id="thought-2">
+            Não sei se ela ainda tem sentimentos por mim
+            <img src="images/doubt.png" alt="Emoji de dúvida" class="option-icon">
+        </button>
+        <button class="option-button" id="thought-3">
+            Será que ela está com outra pessoa?
+            <img src="images/jealous.png" alt="Emoji de ciúme" class="option-icon">
+        </button>
+        <button class="option-button" id="thought-4">
+            Quero que tudo seja diferente
+            <img src="images/change.png" alt="Emoji de mudança" class="option-icon">
+        </button>
+    </div>
+</div>
+
+<!-- Décima segunda seção: Influência de energias ruins (inicialmente oculta) -->
+<div class="container" id="negative-energies" style="display: none;">
+    <h1><strong>Você sente que o término teve influência de energias ruins e inveja?</strong></h1>
+    <h2>Isso é muito importante!</h2>
+    <div class="options">
+        <button class="option-button" id="negative-energies-yes">
+            Sim, muita influência!
+            <img src="images/negative.png" alt="Emoji de energia negativa" class="option-icon">
+        </button>
+        <button class="option-button" id="negative-energies-no">
+            Não.
+            <img src="images/positive.png" alt="Emoji de energia positiva" class="option-icon">
+        </button>
+    </div>
+</div>
+
+<!-- Décima terceira seção: Pergunta sobre as próximas 72h (inicialmente oculta) -->
+<div class="container" id="future-desired" style="display: none;">
+    <h1>Nas próximas 72h, como você gostaria de estar?</h1>
+    <h2>Isso é muito importante!</h2>
+    <div class="options">
+        <button class="option-button" id="option-1">
+            Gostaria de estar de volta com meu amor.
+        </button>
+        <button class="option-button" id="option-2">
+            Gostaria de conhecer outra pessoa.
+        </button>
+    </div>
+</div>
+
+<!-- Décima quarta seção: Calculando a chance de reconquistar (inicialmente oculta) -->
+<div class="container" id="reconquest-chance" style="display: none;">
+    <div class="progress-bar-container">
+        <!-- Barra de progresso principal (fora do retângulo) -->
+        <div class="progress-bar-inner">
+            <div class="progress-marker"></div>
+        </div>
+    </div>
+    <p id="calculating-text">Calculando chance de reconquistar...</p>
+    <div id="chance-result" style="display: none;">
+        <h1>Sua chance é MUITO ALTA!</h1>
+        <p>Você tem 99,8% de chance de reconquistar seu grande amor utilizando uma Amarração Amorosa.</p>
+        <div class="info-box">
+            <div class="top-left">99,8%</div>
+            <div class="top-right">Chance de reconquistar seu amor</div>
+            <div class="bottom-left">BAIXO</div>
+            <div class="bottom-middle">MEIO</div>
+            <div class="bottom-right">ALTO</div>
+            <div class="progress-wrapper">
+                <!-- Barra de progresso dentro do retângulo -->
+                <div class="progress-bar-inner">
+                    <div class="progress-marker"></div> <!-- Bolinha branca que segue a barra de progresso -->
+                </div>
+            </div>
+        </div>
+        <!-- Botão "Continuar" -->
+        <button class="continuar-button">CONTINUAR</button>
+    </div>
+</div>
+    
+    <!-- Referência ao arquivo JavaScript externo -->
+    <script src="js/script.js"></script>
+</body>
+</html>
