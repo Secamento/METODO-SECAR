@@ -164,7 +164,7 @@ p {
     padding: 12px 20px;
     font-size: 1.1em;
     font-weight: bold;
-    border: 2px solid #000000; /* Borda preta */
+    border: 2px solid #FF00FF; /* Borda rosa */
     border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s, transform 0.3s, box-shadow 0.3s; /* Transições suaves para hover */
